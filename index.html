@@ -1,25 +1,34 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сайт с поздравлением</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Поздравление</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Подключение CSS -->
 </head>
 <body>
-
-<div class="password-container">
-    <div class="console">
-        <input type="password" class="password-input" id="password" placeholder="Введите пароль...">
+    <!-- Контейнер для ввода пароля -->
+    <div class="password-container">
+        <div class="console">
+            <p>Введите пароль:</p>
+            <input id="password" class="password-input" type="text" placeholder="Пароль">
+        </div>
     </div>
-</div>
-<div class="button-container" id="buttons" style="display:none;">
-    <div class="button-background">
-        <button class="button" onclick="window.location.href='https://twitter.com/SausageNew'">Создатель (@SausageNew)</button>
-        <button class="button" onclick="window.location.href='https://twitter.com/ariana_sk14'">Для кого (@ariana_sk14)</button>
-    </div>
-</div>
 
-<script src="script.js"></script>
+    <!-- Поздравление -->
+    <div id="congrats" class="hidden-content">
+        <h2></h2>
+    </div>
+
+    <!-- Контейнер с кнопками -->
+    <div id="buttons" class="button-container" style="display: none;">
+        <div class="button-background">
+            <button class="button">Создатель: @SausageNew</button>
+            <button class="button">Для кого: @ariana_sk14</button>
+        </div>
+    </div>
+
+    <!-- Подключение JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
