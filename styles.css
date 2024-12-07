@@ -65,24 +65,6 @@ body {
     outline: none;
     border: 2px solid #fff;
 }
-
-.hidden-content {
-    display: none;
-    background-color: #dcdcdc;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    margin-top: 20px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    animation: fadeIn 1.5s ease-out;
-}
-
-.hidden-content h2 {
-    color: #333;
-    font-size: 24px;
-    animation: textGlow 2s infinite alternate;
-}
-
 @keyframes textGlow {
     0% {
         text-shadow: 0 0 5px #1abc9c, 0 0 10px #1abc9c;
