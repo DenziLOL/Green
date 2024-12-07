@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт с поздравлением</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="password-container">
+    <div class="console">
+        <input type="password" class="password-input" id="password" placeholder="Введите пароль...">
+    </div>
+</div>
+
+<div class="hidden-content" id="congrats" style="display:none;">
+    <h2>Поздравляем с Днём Рождения!</h2>
+</div>
+
+<div class="button-container" id="buttons" style="display:none;">
+    <div class="button-background">
+        <button class="button" onclick="window.location.href='https://twitter.com/SausageNew'">Создатель (@SausageNew)</button>
+        <button class="button" onclick="window.location.href='https://twitter.com/ariana_sk14'">Для кого (@ariana_sk14)</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
